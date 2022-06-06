@@ -1,0 +1,371 @@
+/*navbar*/
+li{
+    list-style: none; /*Specify all the list properties*/
+}
+nav img{ 
+    /*logo size*/
+    width: 250px;
+}
+nav.content{
+    position: fixed;/*stays in the same place even if the page is scrolled */
+    /*overflow: hidden;*/
+    /*z-index: 500;*/
+    clear: both;
+    background-color: rgba(255, 255, 255, 0.973);/*background color of navbar*/ 
+   /* margin-left: auto;*/
+   /* margin-right: auto;*/
+    width: 100%;
+    padding: 20px;/*top of the page*/
+   /* box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 15%);*/
+}
+.navigationbar{
+    display: flex; /*flex container to use flexbox.*/
+    justify-content: space-between;/*Align the flex items */
+    margin:0 auto;/*the browser calculates the margin*/
+    max-width: 1000px;
+}
+
+.links-nav>li{ /*Selects all <li> elements where the parent is a <nav> element*/
+    display: inline-block;/*allows to set a width and height on the element.*/
+    position: relative;/*positioned relative to its normal position*/
+    align-content: center;
+}
+.links-nav li a{
+    text-decoration: none;/*hide the ligne*/
+    color : #5f5d5d;
+    padding:20px;
+}
+
+.links-nav li a:hover{
+    color: #00b39b;/*clickcolor*/
+}
+
+/*choice liste */
+.dropdown-content{
+   display: none; /* display just on click */
+   position: fixed;/* still fixed when i click ,showother linck*/
+   /*min-width: 120px;*/
+    background: rgb(241, 245, 248);
+    box-shadow: 0 5px 10px 0 #9fd7f7; /*shadow bow*/
+}
+
+.dropdown-content ul{
+    padding:1px; /*padding box */
+}
+
+.Departments:hover + .dropdown-content{/*selector to show the list*/
+    display: block; 
+}
+
+.dropdown-content:hover{ /*select the choice in list  */
+    display: block;}
+
+/*main*/
+/* section 1 discriptions */
+#smallest-logo{
+    margin-top: 100px;
+}
+.discription{
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: #00b39b;
+}
+.text-discription{
+    display: flex;
+    padding: 10px;
+}
+
+.text-discription p{
+    margin: 10px;
+    color: #494646;
+    line-height: 1.75;
+    flex-wrap: wrap;
+}
+
+/*section2 cards*/
+
+.card-section{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    color: white;
+    height: 345px;
+    justify-content: left;
+}
+.cards h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 400px;
+}
+.cards h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300px;
+}
+.card-1{
+    background-color: #00ccb1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+.card-2{
+    background-color: #3d83df;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+.card-3{
+    background-color: #1b2734;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+#card-dropdowns{
+    background: transparent;
+    color: white;
+    border : 0;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    margin-bottom: 35px
+}
+#card-dropdowns-exception{
+    background: transparent;
+    color: white;
+    border : 0;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.card-dropdown option, #card-dropdowns option{
+    color: black;
+}
+
+/*section 4 logos*/
+ 
+.actual-logos {
+    height: 20px;
+    width: auto;
+}
+#logo1{
+    height: 45px;
+}
+#logo4{
+    height: 90px;
+}
+.logos{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+.title-logos{
+    width: 33%;
+    font-size: 1.625em;
+    margin: .25em 0 .35em;
+}
+.title-logos h1{
+    font-size: 1.625em;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.lots-of-logos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lots-of-logos ul li a{
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+}
+.summ-of-logos {
+    display: flex;
+    align-content: center;
+}
+.summ-of-logos ul li{
+    padding: 0 10px;
+} 
+
+/* statistics*/
+.stat-bg{
+    background: #e5faf8;
+    position: relative;
+    overflow: hidden;
+}
+h3{
+    color: #00b39b;
+    font-size: 20px;
+    font-weight: 400;
+    position : relative;
+}
+.statistics{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+.stat-title p{
+    max-width: 400px;
+    margin: 20px auto ;
+}
+
+.stat-title{
+    width: 50%;
+}
+.right-block{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.stat-stats{
+    width: 50%;
+}
+
+.stat-card{
+    width: 200px;
+    height: 250px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-stat-card{
+    height: 40px;
+    width: 40px;
+    margin: 0 auto ;
+    background-color:#00b39b;
+}
+
+.stat-card h3{
+    margin-top: 10px;
+}
+
+.the-weird-logo{
+    width: 450px; 
+    height: 450px; 
+    position:absolute; 
+    right: 67%; 
+    top: 49%;
+    background-image: url(res/biglogo.png);
+    background-repeat: no-repeat;
+}
+.stat-countries{
+    margin-top: 50px;
+
+}
+.stat-appointments{
+    margin-top: 25px;
+}
+
+.stat-patients{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*sight seeing*/
+
+.sight-seeing{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    color: #747474;
+}
+.sight-seeing-cards{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.town-card{
+    box-shadow: 0 5px 10px 0 transparent;
+    transition: box-shadow .2s ease 0s;
+    width: 320px;
+    margin: 25px 0;
+    border: 1px solid rgba(0,0,0,.03);
+}
+.town-img{
+    border-radius: 6px;
+}
+.town-card:hover{
+
+    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 13%);
+    transition: box-shadow .2s ease 0s;
+}
+.reservation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+    width: auto;
+}
+.town-text{
+    margin: 0;
+    font-weight: 500;
+    color: #747474;
+}
+.town a{
+    text-decoration: none;
+}
+
+
+/* section 6 */
+
+.conclusion{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+#the-only-h1-not-green{
+    color: #333;
+    font-size: 2.1428571429em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+footer{
+    
+    text-align: center;
+    color: #ababab;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 12px;
+}
+footer div{
+    border-top: 1px solid #eef2f2;
+    padding: 1em 0;
+}
